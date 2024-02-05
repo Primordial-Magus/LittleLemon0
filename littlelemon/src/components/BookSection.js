@@ -185,7 +185,7 @@ const BookSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="blue" width="full" isLoading={isLoading} onSubmit={formik.onSubmit}>
+              <Button aria-label="On Click" type="submit" colorScheme="blue" width="full" isLoading={isLoading} onSubmit={formik.onSubmit}>
                 Book Now
               </Button>
               

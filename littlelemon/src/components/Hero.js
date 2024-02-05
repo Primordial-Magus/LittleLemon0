@@ -32,6 +32,7 @@ const Hero = () => {
             marginTop="3rem"
             colorScheme='yellow'
             size="lg"
+            aria-label="On Click"
             >{buttonText}</Button>
 
         </Link>
