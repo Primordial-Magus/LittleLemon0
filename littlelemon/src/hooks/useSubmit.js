@@ -20,7 +20,7 @@ const useSubmit = () => {
       }
       setResponse({
         type: 'success',
-        message: `Thanks for your submission ${data.firstName}, we will get back to you shortly!`,
+        message: `Thanks for your booking ${data.name}, looking forward to seeing you soon!`,
       })
     } catch (error) {
       setResponse({

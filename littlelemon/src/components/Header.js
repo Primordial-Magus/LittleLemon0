@@ -1,39 +1,32 @@
 import React, { useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faMedium,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { Image, Box, HStack } from "@chakra-ui/react";
+import logo from "../images/logo.jpg";
 
-const socials = [
+
+const navigation = [
   {
-    icon: faEnvelope,
-    url: "mailto: hello@example.com",
-    id: "s1"
+    destination: "Home",
+    url: "./",
   },
   {
-    icon: faGithub,
-    url: "https://github.com",
-    id: "s2"
+    destination: "About",
+    url: "./",
   },
   {
-    icon: faLinkedin,
-    url: "https://www.linkedin.com",
-    id: "s3"
+    destination: "Menu",
+    url: "./",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
-    id: "s4"
+    destination: "Reservation",
+    url: "./",
   },
   {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-    id: "s5"
+    destination: "Order Online",
+    url: "./",
+  },
+  {
+    destination: "Login",
+    url: "./",
   },
 ];
 
@@ -95,26 +88,34 @@ const Header = () => {
         >
           <nav>
             <HStack spacing={8}>
-              {socials.map(({ icon, url }) => (
+              <Image
+              width="50%"
+              objectFit='cover'
+              src={logo}
+              >
+              </Image>
+
+
+            </HStack>
+          </nav>
+
+          <nav>
+            <HStack 
+              spacing={8}
+              >
+
+              {navigation.map(({ destination , url }) => (
                 <a
                   key={url}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={icon} size="2x" key={url} />
+
+                  { destination }
+
                 </a>
               ))}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              <a href="#projects" onClick={handleClick("projects")}>
-                Projects
-              </a>
-              <a href="#contactme" onClick={handleClick("contactme")}>
-                Contact Me
-              </a>
             </HStack>
           </nav>
         </HStack>
