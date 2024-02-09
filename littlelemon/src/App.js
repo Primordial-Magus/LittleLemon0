@@ -16,7 +16,6 @@ function App() {
           <Hero />
           
           <SpecialsSection />
-          <BookSection />
           <Footer />
           <Alert />
         </main>

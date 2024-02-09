@@ -19,7 +19,7 @@ const navigation = [
     href: "./",
   },
   {
-    destination: "Reservation",
+    destination: "Reservations",
     href: "./",
   },
   {

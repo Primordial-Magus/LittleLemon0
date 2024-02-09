@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Link, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import Pavolva from "../images/pavlova.jpg"
-
 import Dishes from "../images/dishes.jpg"
 
 const title = "Little Lemon Restaurant";

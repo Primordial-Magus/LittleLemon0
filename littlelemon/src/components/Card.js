@@ -1,4 +1,4 @@
-import { Link, Heading, HStack, Image, Text, VStack, Box } from "@chakra-ui/react";
+import { Button, Link, Heading, HStack, Image, Text, VStack, Box } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -9,62 +9,37 @@ const Card = ({ title, description, imageSrc, targetLabel, target}) => {
   // Feel free to import other UI components from Chakra UI if you wish to.
   
   return (
-  <VStack
-      borderStyle="solid"
-          backgroundColor="#FFFFFF"
-          borderRadius={"lg"}
-  
-  
-  >
-    <HStack>
-      <VStack
-          px={4}
-          py={4}
-      >
-        <Box>
-          <Image 
-          src={imageSrc}
-          >
-          </Image>
-          <Heading
+        <VStack 
+          color="black" 
+          backgroundColor="#eeefee" 
+          cursor="pointer" 
+          borderRadius="xl" 
+          alignItems="left"
+        > 
+          <Image borderRadius="xl" src={imageSrc} alt={title} /> 
+          <VStack spacing={4} p={4} alignItems="flex-start"> 
+            <HStack justifyContent="space-between" alignItems="center"> 
+              <Heading as="h3" size="md"> 
+                {title} 
+              </Heading> 
+            </HStack> 
+            <Text color="#64748b" fontSize="lg"> 
+              {description} 
+            </Text> 
+         
+            <Button
+              mt="1rem"
+              colorScheme='yellow'
+              size="lg"
+              aria-label="On Click"
+              >{targetLabel}
+            </Button>
 
-          fontSize={22}
-          size={20}
-          position="center"
-          py={4}
-          >
-            {title}
-          </Heading>
-          <Box height={"100px"}    >
-            <Text
-            color="#000000"
-          
-            >
-            {description}
-            </Text>
-          </Box>
-          <Box>
-            <Link
-            py={4}
-            color="#000000"
-            href={target}
-            >
-                {targetLabel}          
-              <FontAwesomeIcon icon={faArrowRight} size="1x" />
-            </Link>
-          </Box>
-          
-        </Box>
-      </VStack>
-
-    </HStack>
-
-  </VStack>
-
-  );
-  
+          </VStack> 
+        </VStack> 
+      ); 
+   }; 
+    
 
 
-};
-
-export default Card;
+export default Card; 
