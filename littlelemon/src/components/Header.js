@@ -1,32 +1,34 @@
 import React, { useEffect, useRef } from "react";
-import { Image, Box, HStack } from "@chakra-ui/react";
+import { Text, Nav, Image, Grid, Box, HStack } from "@chakra-ui/react";
 import logo from "../images/logo.jpg";
+// import { NavLink } from "react-router-dom";
+
 
 
 const navigation = [
   {
     destination: "Home",
-    url: "./",
+    href: "./",
   },
   {
     destination: "About",
-    url: "./",
+    href: "./",
   },
   {
     destination: "Menu",
-    url: "./",
+    href: "./",
   },
   {
     destination: "Reservation",
-    url: "./",
+    href: "./",
   },
   {
-    destination: "Order Online",
-    url: "./",
+    destination: "Order",
+    href: "./",
   },
   {
     destination: "Login",
-    url: "./",
+    href: "./",
   },
 ];
 
@@ -67,7 +69,7 @@ const Header = () => {
     }
   };
   return (
-    <Box
+    <Grid
       position="fixed"
       top={0}
       left={0}
@@ -76,8 +78,9 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      backgroundColor="#18181b"
+      backgroundColor="#fff"
       ref={headerRef}
+      
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
@@ -87,40 +90,59 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            <HStack spacing={8}>
+
+          <Image
+              width="50%"
+              objectFit='cover'
+              src={logo}
+              alignItems={"left"}
+              >
+            </Image>
+
+            {/* <HStack spacing={8}>
               <Image
               width="50%"
               objectFit='cover'
               src={logo}
               >
-              </Image>
+              </Image> */}
 
 
-            </HStack>
+            {/* </HStack> */}
           </nav>
 
           <nav>
             <HStack 
               spacing={8}
+              
+              
+              
+               
+              
               >
 
-              {navigation.map(({ destination , url }) => (
-                <a
-                  key={url}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {navigation.map(({ destination , href }) => (
+                <Text
+                color={"#000"}
+                key={href}
+                to={href}
+                _hover={{
+                  color: "#f4ce14",
+                  cursor: "pointer",
+                }}
+                fontWeight={"bold"}
                 >
 
-                  { destination }
 
-                </a>
+
+                  { destination }
+                </Text>
               ))}
             </HStack>
           </nav>
         </HStack>
       </Box>
-    </Box>
+    </Grid>
   );
  };
 

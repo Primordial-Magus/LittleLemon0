@@ -1,48 +1,61 @@
 import React from "react";
-import { Link, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
+import { Container, Link, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Pavolva from "../images/pavlova.jpg"
 
+import Dishes from "../images/dishes.jpg"
+
 const title = "Little Lemon Restaurant";
-const text = "Best Restauarant in San Francisco"
-const buttonText = "Book Now"
+const description = "We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist."
+const city = "Chicago"
+const buttonText = "Reserve a table"
 
 // Implement the UI for the LandingSection component according to the instructions.
 // Use a combination of Avatar, Heading and VStack components.
 const Hero = () => {
   return (
   <FullScreenSection
-    justifyContent="center"
-    alignItems="center"
     isDarkBackground
     backgroundColor="#495E57"
+    marginTop={"8rem"}
+    marginLeft={"8rem"}
+    marginRight={"8rem"}
+    marginBottom={"3rem"}
+
   >
     <HStack>
-    <VStack
-    >
+      <VStack
+        alignItems="Left"
+      >
 
-        <Heading>{title}</Heading>
-        <Text>{text}</Text>
+          <Heading
+          >{title}</Heading>
 
-        <Link
-            href="./#book-section"
-        >
+          <Heading
+            fontStyle={"italic"}
+          >{city}</Heading>
 
-            <Button
-            marginTop="3rem"
-            colorScheme='yellow'
-            size="lg"
-            aria-label="On Click"
-            >{buttonText}</Button>
+          <Text
+            marginTop="1rem"
+          >{description}</Text>
 
-        </Link>
+          <Link
+              href="./#book-section"
+          >
 
-    </VStack>
+              <Button
+              marginTop="3rem"
+              colorScheme='yellow'
+              size="lg"
+              aria-label="On Click"
+              >{buttonText}</Button>
 
+          </Link>
 
-        
+      </VStack>
+
        <Image
-        src={Pavolva}
+        src={Dishes}
         width="50%"
         borderRadius="1rem"
         margin="3rem"
