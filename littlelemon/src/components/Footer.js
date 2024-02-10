@@ -25,12 +25,12 @@ const Footer = () => {
 
             <VStack alignItems="left">
               <Heading as="h3" size="md">Navigation</Heading>
-              <Link>Home</Link>
-              <Link>About</Link>
-              <Link>Menu</Link>
-              <Link>Reservations</Link>
-              <Link>Order</Link>
-              <Link>Login</Link>
+              <Link aria-label="On Click">Home</Link>
+              <Link aria-label="On Click">About</Link>
+              <Link aria-label="On Click">Menu</Link>
+              <Link aria-label="On Click">Reservations</Link>
+              <Link aria-label="On Click">Order</Link>
+              <Link aria-label="On Click">Login</Link>
 
             </VStack>
               
@@ -39,16 +39,16 @@ const Footer = () => {
               <Heading as="h3" size="md">Contact</Heading>
               <Text>2801 Maldove Street, Chicago Illinois</Text>
               <Text>(123)-456-7891</Text>
-              <Link>littlelemon@gmail.com</Link>
+              <Link aria-label="On Click">littlelemon@gmail.com</Link>
 
             </VStack>
 
 
             <VStack alignItems="left">
               <Heading as="h3" size="md">Connect</Heading>
-              <Link>Facebook</Link>
-              <Link>Instagram</Link>
-              <Link>TikTok</Link>
+              <Link aria-label="On Click">Facebook</Link>
+              <Link aria-label="On Click">Instagram</Link>
+              <Link aria-label="On Click">TikTok</Link>
 
 
             </VStack>
