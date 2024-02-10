@@ -7,7 +7,7 @@ const specials = [
   {
     name: "Greek Salad",
     description:
-      "O",
+      "Mouthwatering Greek salad, a harmonious blend of juicy tomatoes, crisp cucumbers, tangy feta, olives, and vibrant herbs, drizzled with olive oil.",
     targetLabel: "Order for Delivery",
     target: "./",
     getImageSrc: () => require("../images/greek_salad.jpg"),
@@ -15,7 +15,7 @@ const specials = [
   {
     name: "Bruschetta",
     description:
-      "S",
+      "Savor the exquisite flavors of bruschetta: Toasted bread topped with ripe tomatoes, garlic, basil, and a hint of balsamic, creating a delightful Italian appetizer.",
       targetLabel: "Order for Delivery",
       target: "./",
     getImageSrc: () => require("../images/bruschetta.jpg"),
@@ -23,7 +23,7 @@ const specials = [
   {
     name: "Lemon Dessert",
     description:
-    "E",
+    "Experience pure bliss with our lemon dessert. A symphony of sweet and tangy flavors that captivate your taste buds in every delightful, citrus-infused bite.",
     targetLabel: "Order for Delivery",
     target: "./",
     getImageSrc: () => require("../images/lemon_dessert.jpg"),
@@ -32,7 +32,7 @@ const specials = [
 
 const buttonText = "Online Menu"
 
-const SpecialsSection = () => {
+const Highlights = () => {
   return (
     <FullScreenSection
       p={8}
@@ -42,7 +42,7 @@ const SpecialsSection = () => {
       marginRight={"8rem"}
       marginBottom={"3rem"}
     >
-      <Box justifyContent="space-between">
+      <Box>
         <Heading as="h1" id="specials-section">
           This weeks specials
         </Heading>
@@ -79,39 +79,4 @@ const SpecialsSection = () => {
 };
 
 
-
-
-//  const ProjectsSection = () => { 
-//   return ( 
-//     <FullScreenSection 
-//       backgroundColor="#14532d" 
-//       isDarkBackground 
-//       p={8} 
-//       alignItems="flex-start" 
-//       spacing={8} 
-//     > 
-//       <Heading as="h1" id="projects-section"> 
-//         Featured Projects 
-//       </Heading> 
-//       <Box 
-//         display="grid" 
-//         gridTemplateColumns="repeat(2,minmax(0,1fr))" 
-//         gridGap={8} 
-//       > 
-//         {projects.map((project) => ( 
-//           <Card 
-//             key={project.title} 
-//             title={project.title} 
-//             description={project.description} 
-//             url="https://github.com/rgommezz/react-native-offline" 
-//             imageSrc={project.getImageSrc()} 
-//           /> 
-//         ))} 
-//       </Box> 
-//     </FullScreenSection> 
-//   ); 
-//  }; 
-
-
-
-export default SpecialsSection;
+export default Highlights;

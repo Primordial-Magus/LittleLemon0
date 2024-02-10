@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const Card = ({ title, description, imageSrc, targetLabel, target}) => {
+const Card = ({ title, description, imageSrc}) => {
   // Implement the UI for the Card component according to the instructions.
   // You should be able to implement the component with the elements imported above.
   // Feel free to import other UI components from Chakra UI if you wish to.
@@ -27,14 +27,6 @@ const Card = ({ title, description, imageSrc, targetLabel, target}) => {
               {description} 
             </Text> 
          
-            <Button
-              mt="1rem"
-              colorScheme='yellow'
-              size="md"
-              aria-label="On Click"
-              >{targetLabel}
-            </Button>
-
           </VStack> 
         </VStack> 
       ); 

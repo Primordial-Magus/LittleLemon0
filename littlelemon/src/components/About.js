@@ -1,16 +1,17 @@
+
 import React from "react";
 import { Container, Link, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Dishes from "../images/dishes.jpg"
 
 const title = "Little Lemon";
-const description = "We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist."
+const description = "In 1995, siblings Adrian and Mario established Little Lemon. Despite the city's diverse culinary scene, the brothers noticed a gap in Mediterranean cuisine in Chicago. Motivated to introduce the tastes of their Italian hometown to the city, they embarked on a mission to bring these flavors to the people. Almost three decades later, Adrian and Mario still actively manage the Little Lemon restaurant."
 const city = "Chicago"
 const buttonText = "Reserve a table"
 
 // Implement the UI for the LandingSection component according to the instructions.
 // Use a combination of Avatar, Heading and VStack components.
-const Hero = () => {
+const About = () => {
   return (
   <FullScreenSection
     isDarkBackground
@@ -27,8 +28,6 @@ const Hero = () => {
       >
 
           <Heading
-          fontSize="2.5rem"
-
           >{title}</Heading>
 
           <Heading
@@ -57,7 +56,15 @@ const Hero = () => {
        <Image
         src={Dishes}
         width="50%"
-        borderRadius="1rem"
+        margin="3rem"
+        position="right"
+
+        >
+
+       </Image>
+       <Image
+        src={Dishes}
+        width="50%"
         margin="3rem"
         position="right"
 
@@ -78,4 +85,4 @@ const Hero = () => {
 };
 
 
-export default Hero;
+export default About;

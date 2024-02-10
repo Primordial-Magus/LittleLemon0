@@ -1,11 +1,14 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Header from "./components/Header";
-import SpecialsSection from "./components/SpecialsSection";
+import Highlights from "./components/Highlights";
+import Testimonials from "./components/Testimonials";
+import About from "./components/About";
 import BookSection from "./components/BookSection";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
+
 
 function App() {
   return (
@@ -14,8 +17,10 @@ function App() {
         <main>
           <Header />
           <Hero />
-          
-          <SpecialsSection />
+          <Highlights />
+          <Testimonials />
+          <About />
+
           <Footer />
           <Alert />
         </main>
