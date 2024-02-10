@@ -114,11 +114,6 @@ const Header = () => {
           <nav>
             <HStack 
               spacing={8}
-              
-              
-              
-               
-              
               >
 
               {navigation.map(({ destination , href }) => (

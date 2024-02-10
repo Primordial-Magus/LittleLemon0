@@ -41,7 +41,7 @@ const Hero = () => {
           >{description}</Text>
 
           <ChakraLink
-              as={ReactRouterLink} to='/booking'
+              as={ReactRouterLink} to='/reservations'
           >
 
               <Button

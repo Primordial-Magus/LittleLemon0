@@ -16,12 +16,12 @@ import {
 import * as Yup from 'yup';
 import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
-import {useAlertContext} from "../context/alertContext";
+// import {useAlertContext} from "../context/alertContext";
 import DatePicker from "react-datepicker";
 
 const BookingForm = () => {
   const {isLoading, response, submit} = useSubmit();
-  const { onOpen } = useAlertContext();
+  // const { onOpen } = useAlertContext();
 
 
   const formik = useFormik({
