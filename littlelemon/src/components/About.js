@@ -15,14 +15,14 @@ const About = () => {
   return (
   <FullScreenSection
     isDarkBackground
-    backgroundColor="#495E57"
+    backgroundColor="#F4CE14"
     marginTop={"2rem"}
     marginLeft={"8rem"}
     marginRight={"8rem"}
     marginBottom={"2rem"}
 
   >
-    <HStack>
+    <HStack >
       <VStack
         alignItems="Left"
       >
@@ -56,7 +56,7 @@ const About = () => {
 
        </Image>
      
-       </HStack>
+    </HStack>
 
    
   
