@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import {React, useEffect} from "react";
 import {  useFormik } from "formik";
 import {
   Box,
@@ -19,7 +19,7 @@ import useSubmit from "../hooks/useSubmit";
 import {useAlertContext} from "../context/alertContext";
 import DatePicker from "react-datepicker";
 
-const BookSection = () => {
+const BookingForm = () => {
   const {isLoading, response, submit} = useSubmit();
   const { onOpen } = useAlertContext();
 
@@ -72,7 +72,7 @@ const BookSection = () => {
       spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
-        <Heading as="h1" id="book-section">
+        <Heading as="h1" id="booking-section">
           Book
         </Heading>
         <Box p={6} rounded="md" w="100%">
@@ -197,4 +197,4 @@ const BookSection = () => {
   );
 };
 
-export default BookSection;
+export default BookingForm;

@@ -40,7 +40,7 @@ const Hero = () => {
           >{description}</Text>
 
           <Link
-              href="./#book-section"
+              href="./#booking-section"
           >
 
               <Button
