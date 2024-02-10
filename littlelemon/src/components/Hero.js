@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Link, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
+import { Container, Link as ChakraLink, Button, Text, Image, Heading, HStack, VStack, } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Dishes from "../images/dishes.jpg"
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 const title = "Little Lemon";
 const description = "We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist."
@@ -39,8 +40,8 @@ const Hero = () => {
             marginTop="1rem"
           >{description}</Text>
 
-          <Link
-              href="./#booking-section"
+          <ChakraLink
+              as={ReactRouterLink} to='/booking'
           >
 
               <Button
@@ -50,7 +51,7 @@ const Hero = () => {
               aria-label="On Click"
               >{buttonText}</Button>
 
-          </Link>
+          </ChakraLink>
 
       </VStack>
 

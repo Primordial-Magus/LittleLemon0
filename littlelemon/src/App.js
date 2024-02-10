@@ -22,23 +22,8 @@ function App() {
     </ChakraProvider>
 
 
-    //  <ChakraProvider>
-    //   <AlertProvider>
-    //     <main>
-    //       <Header />
-    //       <Hero />
-    //       <Highlights />
-    //       <Testimonials />
-    //       <About />
 
-    //       <Footer />
-    //       <Alert />
-    //     </main>
-    //   </AlertProvider>
-    // </ChakraProvider> 
-    
   );
-    
 }
 
 export default App;
